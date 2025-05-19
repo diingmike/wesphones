@@ -1,0 +1,385 @@
+/*
+	Theme: Wes Phones;
+	Author: Michael Chan;
+	Date of Creation: Thur, May 15, 2025;
+	Colors: Flat UI, Swedish Palette, white, black & red;
+*/
+
+/* css for all pages */
+	html,body
+	{
+		font-size: 13px;
+		scroll-behavior: smooth;
+		box-sizing: border-box;
+	}
+/* css for all pages ends */
+
+/* css for banner */
+	.banner
+	{
+		min-height: 100vh;
+	}
+/* css for banner ends */
+
+/* css for header */
+	.header-cover
+	{
+		background-color: #ff5e57;
+		color: white;
+		position: fixed;
+		width: 100%;
+		z-index: 2;
+	}
+
+	header
+	{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	header .logo a
+	{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		text-decoration: none;
+	}
+
+	header .logo a img
+	{
+		margin-top: 10px;
+		margin-bottom: 10px;
+		border-radius: 13px;
+		height: 80px;
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	}
+
+	header .logo a p
+	{
+		margin-top: 30px;
+		color: white;
+		font-weight: 600;
+		font-size: 16px;
+	}
+
+	header ul
+	{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	header ul li
+	{
+		list-style: none;
+		margin-right: 50px;
+	}
+
+	header ul li a
+	{
+		font-weight: 600;
+		text-decoration: none;
+		color: white;
+		padding: 5px 10px;
+		border-radius: 3px;
+	}
+
+	header ul li a:hover
+	{
+		background-color: white;
+		color: #ff5e57;
+	}
+
+	.checkbtn
+	{
+		font-size: 25px;
+		color: white;
+		cursor: pointer;
+		display: none;
+	}
+
+	#check
+	{
+		display: none;
+	}
+
+	.phone-search
+	{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.form-responsive
+	{
+		padding: 5px 10px;
+		border-radius: 3px;
+		border: none;
+		margin-right: 20px;
+	}
+
+	.search-btn
+	{
+		padding: 5px 10px;
+		border: none;
+		border-radius: 3px;
+		font-weight: 600;
+		background-color: #1e272e;
+		color: white;
+	}
+/* css for header ends */
+
+/* css for footer */
+	.footer-cover
+	{
+		background-color: #1e272e;
+		color: white;
+		padding: 30px 0;
+		margin-top: 50px;
+	}
+
+	.footer-content
+	{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 50px;
+	}
+
+	.wes-phones
+	{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.wes-phones img
+	{
+		width: 170px;
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+		border-radius: 13px;
+	}
+
+	.wes-phones p
+	{
+		font-size: 18px;
+		font-weight: 1rem;
+	}
+
+	.footer-title
+	{
+		font-size: 18px;
+		font-weight: 1rem;
+		margin-bottom: 20px;
+	}
+
+	.socials p a
+	{
+		text-decoration: none;
+		color: white;
+	}
+
+	.social-media
+	{
+		width: 8%;
+		height: 35px;
+	}
+/* css for footer ends */
+
+/* css for featured */
+	.section-title
+	{
+		font-size: 18px;
+		font-weight: 1rem;
+		margin-bottom: 20px;
+	}
+
+	.featured
+	{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 50px;
+	}
+
+	.featured-box
+	{
+		width: 100%;
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+		border-radius: 13px;
+		color: white;
+		background-color: #1e272e;
+	}
+
+
+	.featured-box img
+	{
+		width: 100%;
+		height: 400px;
+	}
+
+	.featured-box-info
+	{
+		padding: 11px 11px;
+		text-align: center;
+	}
+
+	.add-btn
+	{
+		border: none;
+		padding: 5px 10px;
+		border-radius: 3px;
+		background-color: #ff5e57;
+		color: white;
+	}
+/* css for featured ends */
+
+/* css for phones */
+	.phones
+	{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		grid-gap: 50px;
+	}
+
+	.phone-box
+	{
+		width: 100%;
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+		border-radius: 13px;
+		color: white;
+		background-color: #1e272e;
+	}
+
+	.phone-box img
+	{
+		width: 100%;
+		height: 250px;
+	}
+
+	.phone-box-info
+	{
+		padding: 11px 11px;
+		text-align: center;
+	}
+/* css for phones ends */
+
+/* css for page responsiveness */
+	@media screen and (max-width:768px)
+	{
+		/* 768 homepage */
+			.checkbtn
+			{
+				display: block;
+				order: 1;
+				margin-right: 20px;
+			}
+
+			header ul
+			{
+				position: fixed;
+				top: 100px;
+				right: -100%;
+				background-color: rgba(0,0,0,0.6);
+				width: 30%;
+				height: 20vh;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+			}
+
+			header ul li
+			{
+				padding: 10px 0;
+			}
+
+			#check:checked ~ ul
+			{
+				right: 0;
+			}
+
+			.featured
+			{
+				grid-gap: 20px;
+			}
+
+			.featured-box img
+			{
+				height: 350px;
+			}
+
+			.wes-phones
+			{
+				grid-gap: 20px;
+			}
+
+			.social-media
+			{
+				width: 15%;
+			}
+
+			.phones
+			{
+				grid-template-columns: 1fr 1fr 1fr;
+			}
+		/* 768 homepage */
+	}
+
+	@media screen and (max-width:425px)
+	{
+		/* 425 homepage */
+			header .phone-search
+			{
+				display: none;
+			}
+
+			.footer-content
+			{
+				grid-template-columns: 1fr;
+			}
+
+			.social-media
+			{
+				width: 8%;
+			}
+
+			.featured
+			{
+				grid-template-columns: 1fr 1fr;
+			}
+
+			.featured-box img
+			{
+				height: 300px;
+			}
+
+			.phones
+			{
+				grid-template-columns: 1fr 1fr;
+				grid-gap: 20px;
+			}
+
+			.phone-box img
+			{
+				height: 200px;
+			}
+		/* 425 homepage end */
+	}
+
+	@media screen and (max-width:320px)
+	{
+		/* 320 homepage */
+			header .logo a img
+			{
+				height: 70px;
+			}
+
+			.featured
+			{
+				grid-template-columns: 1fr;
+			}
+
+			.phones
+			{
+				grid-gap: 10px;
+			}
+		/* 320 homepage ends */
+	}
+/* css for page responsiveness ends */
